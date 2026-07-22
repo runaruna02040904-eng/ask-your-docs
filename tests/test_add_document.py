@@ -22,6 +22,8 @@ class TestAddDocumentSkill:
         """Successfully indexing documents should return the number of chunks."""
         # Arrange
         fake_chunks = [MagicMock(), MagicMock(), MagicMock()]
+        for c in fake_chunks:
+            c.metadata = {}
         mock_text_splitter = mock_text_splitter_cls.return_value
         mock_text_splitter.create_documents.return_value = fake_chunks
 
@@ -72,6 +74,8 @@ class TestAddDocumentSkill:
     ):
         """Omitting filename should default to 'upload'."""
         fake_chunks = [MagicMock(), MagicMock()]
+        for c in fake_chunks:
+            c.metadata = {}
         mock_text_splitter = mock_text_splitter_cls.return_value
         mock_text_splitter.create_documents.return_value = fake_chunks
 

@@ -56,6 +56,6 @@ class RetrieveKnowledgeSkill(BaseSkill[RetrievalArgs]):
             :func:`retrieve_context`.
         """
         return retrieve_context(
-            query=args.query,
+            question=args.query,
             user_id=args.user_id,
         )

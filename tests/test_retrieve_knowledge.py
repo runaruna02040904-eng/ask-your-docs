@@ -18,7 +18,7 @@ class TestRetrieveKnowledgeSkill:
         result = await skill.run({"query": "什么是 RAG", "user_id": 42})
 
         mock_retrieve_context.assert_called_once_with(
-            query="什么是 RAG",
+            question="什么是 RAG",
             user_id=42,
         )
         assert result == "Relevant document chunk."
@@ -33,7 +33,7 @@ class TestRetrieveKnowledgeSkill:
 
         assert result == "Chunk A\n\nChunk B\n\nChunk C"
         mock_retrieve_context.assert_called_once_with(
-            query="RAG pipeline",
+            question="RAG pipeline",
             user_id=7,
         )
 

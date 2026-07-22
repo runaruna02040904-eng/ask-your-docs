@@ -1,0 +1,15 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-dotenv>=1.0.0
+langchain>=0.3.7
+langchain-openai>=0.2.3
+langgraph>=0.2.34
+langchain-community>=0.3.3
+chromadb>=1.5.9
+pypdf>=5.0.0
+sqlalchemy>=2.0.35
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.0
+python-multipart>=0.0.9
+sentence-transformers>=3.0.0
+numpy>=2.0.0
