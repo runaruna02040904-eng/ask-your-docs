@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Chroma / vector store data
+chroma_data/
+
+# Logs
+logs/
+*.log
+
+# Project-specific
+ask_your_docs/backend/.venv/
+ask_your_docs/backend/chroma_data/

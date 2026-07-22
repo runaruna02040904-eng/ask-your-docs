@@ -1,0 +1,17 @@
+[
+    {
+        "question": "什么是 RAG？",
+        "user_id": 1,
+        "context_hint": "RAG stands for Retrieval-Augmented Generation"
+    },
+    {
+        "question": "如何上传文档？",
+        "user_id": 1,
+        "context_hint": "upload a document through the /upload endpoint"
+    },
+    {
+        "question": "DeepSeek 是什么模型？",
+        "user_id": 2,
+        "context_hint": "DeepSeek is a large language model"
+    }
+]
