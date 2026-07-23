@@ -1,4 +1,11 @@
 #!/usr/bin/env python3
+import sys
+sys.path[0:0] = [
+    "D:\\project",
+    "D:\\project\\ask_your_docs\\backend",
+    "D:\\project\\ask_your_docs\\backend\\.venv\\Lib\\site-packages",
+]
+
 """Evaluate the AskYourDocs Agent against a set of test cases.
 
 For each test case the Agent is invoked, then a DeepSeek LLM judges

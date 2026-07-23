@@ -280,9 +280,11 @@ class Agent:
         """Decide whether to loop back for another retrieval or stop.
 
         Returns:
-            ``"continue"`` if *iteration < max_iterations*,
-            ``"end"`` otherwise.
+            ``"end"`` if an answer exists or *iteration >= max_iterations*,
+            ``"continue"`` otherwise (context was empty, retry).
         """
+        if state["answer"]:
+            return "end"
         if state["iteration"] >= self.max_iterations:
             logger.warning(
                 "Max iterations (%d) reached; terminating.",
